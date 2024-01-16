@@ -1,4 +1,3 @@
-
 from dataset import SpineSet
 import torchvision
 import os
@@ -16,7 +15,7 @@ import argparse
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-
+from efficientnet_pytorch import EfficientNet
 from torch.utils.data import DataLoader
 
 class ResNet(nn.Module):
@@ -27,7 +26,6 @@ class ResNet(nn.Module):
         self.fc=torch.nn.Linear(1000,2)
 
     def forward(self,x):
-        #x=self.conv(x)
         x=self.resnet(x)
         x = F.relu(x)
         x=self.fc(x)
@@ -55,14 +53,11 @@ class Inception(nn.Module):
         self.fc=torch.nn.Linear(1000,2)
 
     def forward(self,x):
-        #x=self.conv(x)
         x=self.inception(x)
         x = F.relu(x)
         x=self.fc(x)
         x = torch.sigmoid(x)
         return x
-#
-from efficientnet_pytorch import EfficientNet
 
 class Efficientnet(nn.Module):
     def __init__(self):
