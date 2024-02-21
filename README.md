@@ -16,7 +16,7 @@ python train.py
 ```
 # Testing
 ```bash
-python test.py --ckpt_path <path of pretrained model>
+python predict.py --ckpt_path <path of pretrained model>
 ```
 # Reference
 
