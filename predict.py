@@ -203,6 +203,7 @@ def get_models_results(model_path):
     get_Result(model_path, train_root, test_root, valid_root)
 
 parser=argparse.ArgumentParser(description='PyTorch Example')
+parser.add_argument('--ckpt_path',type=str,default=".\\2dclassify\\models\\Inception\\model.pkl",help='path to checkpoint')
 parser.add_argument('--batch-size',type=int,default=64,metavar='N',help='input batch size for training(default:64)')
 parser.add_argument('--test-batch-size',type=int,default=10,metavar='N',help='input batch size for testing(default:10)')
 parser.add_argument('--epochs',type=int,default=10,metavar='N',help='number of epochs to train(default:10)')
@@ -215,13 +216,13 @@ args=parser.parse_args()
 args.cuda=not args.no_cuda and torch.cuda.is_available()
 
 # path to model params
-path = '.\\2dclassify\\models\\Inception'
-modelpath_list = []
-for dirName, subdirList, fileList in os.walk(path):
-    for filename in fileList:
-        if '.pkl' in filename:
-            modelpath_list.append(os.path.join(dirName, filename))
-for model_path in modelpath_list:
-    get_models_results(model_path)
+# path = '.\\2dclassify\\models\\Inception'
+# modelpath_list = []
+# for dirName, subdirList, fileList in os.walk(path):
+#     for filename in fileList:
+#         if '.pkl' in filename:
+#             modelpath_list.append(os.path.join(dirName, filename))
+# for model_path in modelpath_list:
+#     get_models_results(model_path)
 
-#model_path=".\\2dclassify\\models\\Inception\\Cmodels_fold1Epoch100_lr=0.0001bs=64_val_acc=92.98245614035088__test_acc=85.71428571428571_sensitivity=0.925926_specificity=0.933333_.pkl"
+get_models_results(model_path)
