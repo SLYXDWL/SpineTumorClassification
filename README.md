@@ -6,15 +6,17 @@
 (link to model parameter, to be announced soon...)
 
 # Environment
-\item Python 3.7.9
-\item PyTorch 1.7.0
-\item CUDA 10.1.243
+* Python 3.7.9
+* PyTorch 1.7.0
+* CUDA 10.1.243
 
 # Training
+```bash
 python train.py
-
+```
 # Testing
+```bash
 python test.py --ckpt_path <path of pretrained model>
-
+```
 # Reference
 
