@@ -1,22 +1,20 @@
-from dataset import SpineSet
-import torchvision
 import os
 import torch
-from torch.utils import data
-from PIL import Image
-import numpy as np
-from torchvision import transforms
-import torch
-import torch.nn as nn
-import random
-import math
-import torch.utils.model_zoo as model_zoo
-import argparse
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.utils.model_zoo as model_zoo
+from torch.utils import data
+from torch.utils.data import DataLoader
 import torch.optim as optim
 from efficientnet_pytorch import EfficientNet
-from torch.utils.data import DataLoader
+import torchvision
+from torchvision import transforms
+from dataset import SpineSet
+from PIL import Image
+import numpy as np
+import random
+import math
+import argparse
 
 class ResNet(nn.Module):
     def __init__(self):
