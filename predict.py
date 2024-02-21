@@ -1,7 +1,6 @@
 import os
 # if use multiple gpus
 #os.environ['CUDA_VISIBLE_DEVICES']='4,5,6'
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -215,6 +214,7 @@ parser.add_argument('--log-interval',type=int,default=10,metavar='N',help='how m
 args=parser.parse_args()
 args.cuda=not args.no_cuda and torch.cuda.is_available()
 
+# path to model params
 path = '.\\2dclassify\\models\\Inception'
 modelpath_list = []
 for dirName, subdirList, fileList in os.walk(path):
