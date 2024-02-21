@@ -5,5 +5,16 @@
 # Model Parameters
 (link to model parameter, to be announced soon...)
 
-# Install
-code is based on pytorch
+# Environment
+\item Python 3.7.9
+\item PyTorch 1.7.0
+\item CUDA 10.1.243
+
+# Training
+python train.py
+
+# Testing
+python test.py --ckpt_path <path of pretrained model>
+
+# Reference
+
