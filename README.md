@@ -21,7 +21,7 @@ python predict.py --ckpt_path <path of pretrained model>
 ```
 # Reference
 pdf link: https://rdcu.be/dBOX9 <br>
-If this repository was helpful for your research please consider citing: <br>
+**If this repository was helpful for your research please consider citing:** <br>
 Gu, Z., Dai, W., Chen, J. et al. Convolutional neural network-based magnetic resonance image differentiation of filum terminale ependymomas from schwannomas. BMC Cancer 24, 350 (2024). https://doi.org/10.1186/s12885-024-12023-0
 
 
