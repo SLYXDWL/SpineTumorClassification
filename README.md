@@ -3,7 +3,7 @@
 ![image](https://github.com/SLYXDWL/SpineTumorClassification/assets/83801963/197ac9e5-815a-4e7f-97e6-716a9a39f621)
 
 # Model Parameters
-link：https://pan.baidu.com/s/1m5WcfPaR8LtqSHQCOsPahw  \n
+link：https://pan.baidu.com/s/1m5WcfPaR8LtqSHQCOsPahw  <br>
 access code：k6ws 
 
 # Environment
@@ -20,7 +20,7 @@ python train.py
 python predict.py --ckpt_path <path of pretrained model>
 ```
 # Reference
-pdf link: https://rdcu.be/dBOX9 \n
+pdf link: https://rdcu.be/dBOX9 <br>
 Gu, Z., Dai, W., Chen, J. et al. Convolutional neural network-based magnetic resonance image differentiation of filum terminale ependymomas from schwannomas. BMC Cancer 24, 350 (2024). https://doi.org/10.1186/s12885-024-12023-0
 
 
